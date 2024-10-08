@@ -1,0 +1,129 @@
+body {
+    font-family: 'Garamond', serif; 
+    background-color: #000; 
+    color: #e0e0e0;
+    /* background-image: url('images/background.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #252422;
+}
+
+h1 {
+    color: #ffcc00;
+    font-size: 4em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+    color: #f0d74e;
+    margin: 20px 0;
+    font-size: 2.8em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+p {
+    color: #d0d0d0;
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: justify;
+    padding: 0 15px;
+}
+
+section {
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.281); 
+    border: 1px solid #252422;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+.boss-image { 
+    width: 100%; 
+    max-width: 450px;
+    height: auto; 
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.menu {
+    list-style: none;
+    border: 1px solid #252422; 
+    float: left;
+    background-color: rgba(40, 40, 40, 0.9); 
+    border-radius: 10px; 
+    padding: 5px;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.5); 
+}
+
+.menu li:last-child {
+    border-right: none; 
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px; 
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu li a:hover {
+    background-color: rgba(175, 173, 162, 0.3);
+    color: #222;
+    transform: scale(1.05);
+}
+
+.menu li ul {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: rgba(80, 80, 80, 0.9); 
+    display: none;
+    border-radius: 10px; 
+    padding: 10px 0; 
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid rgba(0, 0, 0, 0.8); 
+    display: block;
+    width: 180px;
+    color: #fff;
+    transition: background-color 0.3s ease; 
+}
+
+.menu li ul li:hover {
+    background-color: rgba(204, 204, 204, 0.2); 
+}
+
+nav {
+    align-self: center;
+    padding-left: 40%;
+}
